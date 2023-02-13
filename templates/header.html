@@ -1,0 +1,112 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sadfsdfasdfsadfasdfsdf</title>
+    <link
+      rel="shortcut icon"
+      href="{% static 'title.ico' %}"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="{% static 'title.ico' %}" type="image/x-icon" />
+    <link
+      href="{% static 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900' %}"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'libs/font-awesome/css/font-awesome.min.css' %}"
+    />
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <style>
+      div.background-alt {
+        background-color: WHITE;
+      }
+      .div {
+        display: inline-block;
+      }
+      table button {
+        border-color: #3498db;
+        height: 40px;
+        margin: 5px;
+        width: 150px;
+      }
+      div.sapak {
+        background-color: rgb(219, 219, 219);
+        height: 700px;
+      }
+      .row img {
+        height: 250px;
+        width: 250px;
+      }
+      a button {
+        background-color: white;
+        border-radius: 0px;
+        border-color: #3498db;
+      }
+      .row {
+        border-color: rgba(33, 125, 187, 0.8);
+      }
+      footer .container {
+        width: 900px;
+        border: 2px solid #3498db;
+      }
+      .education-block {
+      }
+      .edu {
+        dispaly: inline-block;
+        margin-top: -0px;
+        border: 1px solid #3498db;
+        width: 900px;
+      }
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding: 10px;
+        background: #3498db;
+        color: #fff;
+        width: 100%;
+      }
+      #education {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="mobile-menu-open" class="shadow-large" onClick="openNav()">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header id="header1">
+      <div id="mobile-menu-close" onclick="openNav()">
+        <span>Close</span>
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul id="menu" class="shadow">
+        <li>
+          <a href="#experience">SAPAKALAR</a>
+        </li>
+        <li>
+          <a href="#projects">PROÝEKTLAR</a>
+        </li>
+        <li>
+          <a href="#education">YLYMYŇ MERKEZI</a>
+        </li>
+      </ul>
+    </header>
+    <script>
+      function openNav() {
+        const backdrop = document.getElementById("header1");
+        if (backdrop.style.display == "block") backdrop.style.display = "none";
+        else backdrop.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
